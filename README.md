@@ -21,16 +21,21 @@ Frontend: ReactJS, Redux-Toolkit, Apollo Client, JavaScript, HTML, TailwindCSS
 # Steps:
 `
 git clone https://github.com/YourRepo/YourFrontendRepo.git
+
 git clone https://github.com/YourRepo/YourBackendRepo.git
 
 cd YourFrontendRepo
+
 npm install
+
 npm run build
 
 cd YourBackendRepo
+
 mvn clean package
 
 docker build --platform linux/amd64 -t your-dockerhub-username/your-image-name:latest .
+
 docker push your-dockerhub-username/your-image-name:latest
 
 `
